@@ -1,0 +1,16 @@
+Algoritmo de Dekker
+
+O Algoritmo de Dekker é um dos primeiros métodos de exclusão mútua 
+projetados para dois processos. Ele utiliza uma combinação de flags 
+(indicadores de intenção) e uma variável de "vez" (turn) para garantir
+que apenas um processo esteja na seção crítica por vez.
+
+Funcionamento:
+
+Cada processo define sua intenção de entrar na seção crítica, ajustando sua flag correspondente.
+
+Se ambos os processos desejam acessar a seção crítica simultaneamente, a decisão é tomada com base na variável "vez".
+
+O processo não prioritário aguarda até que o outro conclua a seção crítica.
+
+Este algoritmo é garantido a funcionar corretamente apenas em sistemas com dois processos.
